@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+  <title>webfejl</title>
+</h:head>
+
+<h:body>
+
+  <ui:composition template="menu.xhtml">
+
+  <ui:define name="content">
+
+  <p:panel header="Hozzáad" id="new">
+    <h:panelGrid columns="2">
+      <p:outputLabel for="repterkod" value="Repterkod: "/>
+      <p:inputText id="repterkod" />
+      <p:outputLabel for="repternev" value="Repternev: " />
+      <p:inputText id="repternev" />
+      <p:outputLabel for="helyszin" value="Helyszin: " />
+      <p:inputText id="helyszin" />
+      <h:commandButton value="OK" type="submit" action="#" >
+      </h:commandButton>
+    </h:panelGrid>
+  </p:panel>
+
+    <p:panel header="Lista" id="list">
+
+    <h:form id="utasForm">
+
+      <p:dataTable var="utas" value="#{utasView.utass}">
+
+    <p:column headerText="utas_azon">
+      <h:outputText value="#{utas.utas_azon}" />
+    </p:column>
+
+    <p:column headerText="vnev">
+      <h:outputText value="#{utas.vnev}" />
+    </p:column>
+
+    <p:column headerText="knev">
+      <h:outputText value="#{utas.knev}" />
+    </p:column>
+
+        <p:column headerText="telefon">
+          <h:outputText value="#{utas.telefon}" />
+        </p:column>
+
+        <p:column headerText="email">
+          <h:outputText value="#{utas.email}" />
+        </p:column>
+
+        <p:column headerText="lakcim">
+          <h:outputText value="#{utas.lakcim}" />
+        </p:column>
+
+    <p:column headerText="Műveletek">
+      <h:form>
+        <p:commandButton value="szerkeszt" action="#" />
+        <p:commandButton value="töröl" id="remove" action="#{utasView.remove(utas)}"
+                         onclick="return confirm('Biztosan?')">
+          <f:ajax render="utasForm:carTable" />
+        </p:commandButton>
+      </h:form>
+    </p:column>
+
+  </p:dataTable>
+
+    </h:form>
+
+  </p:panel>
+
+  </ui:define>
+
+  </ui:composition>
+
+</h:body>
+
+</html>

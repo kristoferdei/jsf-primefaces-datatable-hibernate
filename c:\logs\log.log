@@ -1,0 +1,962 @@
+2019-12-04 12:06:20.730  INFO 1022 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1022 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:06:20.739  INFO 1022 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:06:22.123  INFO 1022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:06:22.318  INFO 1022 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176ms. Found 2 repository interfaces.
+2019-12-04 12:06:22.989  INFO 1022 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1dd22308] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:06:23.038  INFO 1022 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$2ded6cbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:06:23.043  INFO 1022 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$e21bf1c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:06:23.561  INFO 1022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:06:23.601  INFO 1022 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:06:23.602  INFO 1022 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:06:23.618  INFO 1022 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:06:24.065  INFO 1022 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:06:24.088  INFO 1022 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:06:24.089  INFO 1022 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3239 ms
+2019-12-04 12:06:24.243  INFO 1022 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:06:24.246  INFO 1022 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:06:24.253  INFO 1022 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:06:24.254  INFO 1022 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:06:24.254  INFO 1022 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:06:25.295  INFO 1022 --- [main] org.reflections.Reflections              : Reflections took 873 ms to scan 6 urls, producing 760 keys and 4170 values 
+2019-12-04 12:06:25.940  INFO 1022 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:06:26.300  INFO 1022 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:06:27.009  INFO 1022 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:06:27.010  INFO 1022 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:06:27.010  INFO 1022 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:06:27.247  INFO 1022 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:06:27.529  INFO 1022 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:06:27.649  INFO 1022 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:06:27.856  INFO 1022 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:06:27.859  INFO 1022 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:06:28.296  INFO 1022 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:06:28.543  INFO 1022 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:06:30.229  INFO 1022 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2cdb53d6'
+2019-12-04 12:06:30.236  INFO 1022 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:06:31.171  INFO 1022 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 12:06:31.175  INFO 1022 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 11.809 seconds (JVM running for 13.444)
+2019-12-04 12:06:38.495  INFO 1022 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 12:07:06.243  INFO 1022 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:07:06.244  INFO 1022 --- [Thread-26] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 12:07:06.255  INFO 1022 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 12:07:06.260  INFO 1022 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 12:32:43.767  INFO 1425 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1425 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:32:43.772  INFO 1425 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:32:44.852  INFO 1425 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:32:45.076  INFO 1425 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198ms. Found 3 repository interfaces.
+2019-12-04 12:32:45.681  INFO 1425 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb9e5fc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:32:45.719  INFO 1425 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$cbb9a97c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:32:45.723  INFO 1425 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$7fe82e82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:32:46.241  INFO 1425 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:32:46.277  INFO 1425 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:32:46.278  INFO 1425 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:32:46.292  INFO 1425 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:32:46.674  INFO 1425 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:32:46.697  INFO 1425 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:32:46.697  INFO 1425 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2829 ms
+2019-12-04 12:32:46.822  INFO 1425 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:32:46.825  INFO 1425 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:32:46.833  INFO 1425 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:32:46.833  INFO 1425 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:32:46.833  INFO 1425 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:32:47.827  INFO 1425 --- [main] org.reflections.Reflections              : Reflections took 864 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 12:32:48.286  INFO 1425 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:32:48.528  INFO 1425 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:32:49.170  INFO 1425 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:32:49.171  INFO 1425 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:32:49.171  INFO 1425 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:32:49.391  INFO 1425 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:32:49.655  INFO 1425 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:32:49.771  INFO 1425 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:32:50.008  INFO 1425 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:32:50.011  INFO 1425 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:32:50.524  INFO 1425 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:32:50.856  INFO 1425 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:32:52.502  INFO 1425 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7f7f544a'
+2019-12-04 12:32:52.508  INFO 1425 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:32:53.366  INFO 1425 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 12:32:53.369  INFO 1425 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 10.616 seconds (JVM running for 12.094)
+2019-12-04 12:33:03.484  INFO 1425 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 12:35:25.723  INFO 1425 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:35:25.724  INFO 1425 --- [Thread-26] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 12:35:25.738  INFO 1425 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 12:35:25.743  INFO 1425 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 12:35:30.552  INFO 1444 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1444 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:35:30.556  INFO 1444 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:35:31.493  INFO 1444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:35:31.633  INFO 1444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 3 repository interfaces.
+2019-12-04 12:35:32.153  INFO 1444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6f141d2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:35:32.177  INFO 1444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$7f2f66df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:35:32.182  INFO 1444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$335debe5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:35:32.466  INFO 1444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:35:32.484  INFO 1444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:35:32.484  INFO 1444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:35:32.491  INFO 1444 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:35:32.745  INFO 1444 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:35:32.755  INFO 1444 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:35:32.755  INFO 1444 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2132 ms
+2019-12-04 12:35:32.865  INFO 1444 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:35:32.866  INFO 1444 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:35:32.872  INFO 1444 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:35:32.873  INFO 1444 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:35:32.873  INFO 1444 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:35:33.378  INFO 1444 --- [main] org.reflections.Reflections              : Reflections took 438 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 12:35:33.758  INFO 1444 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:35:33.992  INFO 1444 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:35:34.554  INFO 1444 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:35:34.555  INFO 1444 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:35:34.556  INFO 1444 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:35:34.680  INFO 1444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:35:34.764  INFO 1444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:35:34.814  INFO 1444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:35:34.885  INFO 1444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:35:34.886  INFO 1444 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:35:34.997  INFO 1444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:35:35.098  INFO 1444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:35:35.603  INFO 1444 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3a36da5e'
+2019-12-04 12:35:35.606  INFO 1444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:35:36.300  INFO 1444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 12:35:36.304  INFO 1444 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.318 seconds (JVM running for 7.403)
+2019-12-04 12:35:40.424  INFO 1444 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 12:36:17.726  INFO 1444 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:36:17.727  INFO 1444 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 12:36:17.741  INFO 1444 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 12:36:17.745  INFO 1444 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 12:36:22.104  INFO 1448 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1448 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:36:22.107  INFO 1448 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:36:23.030  INFO 1448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:36:23.157  INFO 1448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 3 repository interfaces.
+2019-12-04 12:36:23.583  INFO 1448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cc2be31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:36:23.607  INFO 1448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$7cde07e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:36:23.610  INFO 1448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$310c8cec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:36:23.850  INFO 1448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:36:23.867  INFO 1448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:36:23.869  INFO 1448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:36:23.875  INFO 1448 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:36:24.135  INFO 1448 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:36:24.145  INFO 1448 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:36:24.146  INFO 1448 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1982 ms
+2019-12-04 12:36:24.252  INFO 1448 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:36:24.253  INFO 1448 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:36:24.260  INFO 1448 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:36:24.260  INFO 1448 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:36:24.260  INFO 1448 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:36:24.783  INFO 1448 --- [main] org.reflections.Reflections              : Reflections took 460 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 12:36:25.166  INFO 1448 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:36:25.413  INFO 1448 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:36:25.985  INFO 1448 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:36:25.986  INFO 1448 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:36:25.986  INFO 1448 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:36:26.095  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:36:26.175  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:36:26.226  INFO 1448 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:36:26.282  INFO 1448 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:36:26.284  INFO 1448 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:36:26.387  INFO 1448 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:36:26.485  INFO 1448 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:36:27.163  INFO 1448 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7a023e34'
+2019-12-04 12:36:27.167  INFO 1448 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:36:27.211  WARN 1448 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #3 of URL [file:/Users/kristoferdei/Downloads/webfejlzh/target/classes/data.sql]: INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.'); nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "TELEFON"; SQL statement:
+INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.') [23502-197]
+2019-12-04 12:36:27.212  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 12:36:27.218  INFO 1448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 12:36:27.220  INFO 1448 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-12-04 12:36:27.233  INFO 1448 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-04 12:36:27.255 ERROR 1448 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #3 of URL [file:/Users/kristoferdei/Downloads/webfejlzh/target/classes/data.sql]: INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.'); nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "TELEFON"; SQL statement:
+INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.') [23502-197]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:584) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at com.webfejl.SpringPrimeFacesApplication.main(SpringPrimeFacesApplication.java:10) [classes/:na]
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #3 of URL [file:/Users/kristoferdei/Downloads/webfejlzh/target/classes/data.sql]: INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.'); nested exception is org.h2.jdbc.JdbcSQLException: NULL not allowed for column "TELEFON"; SQL statement:
+INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.') [23502-197]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:507) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:240) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:210) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:123) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:93) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:37) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:398) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:355) ~[spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.publishEventIfRequired(DataSourceInitializedPublisher.java:98) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.autoconfigure.orm.jpa.DataSourceInitializedPublisher.postProcessAfterInitialization(DataSourceInitializedPublisher.java:88) ~[spring-boot-autoconfigure-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1749) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	... 15 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: NULL not allowed for column "TELEFON"; SQL statement:
+INSERT INTO utas (utas_azon, vnev, knev, telefon, email, lakcim) VALUES (15102001, 'Ácsi', 'Milán', '+36/20/1111111', 'bumm@fej.be', '4032 Debrecen, Budapesti út 3.'), (15102002, 'Agyalá', 'Gyula', null, 'fial@csi.ga', '1012 Budapest, Debreceni utca 43.') [23502-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:179) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.message.DbException.get(DbException.java:155) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:374) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:798) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:177) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.command.dml.Insert.update(Insert.java:134) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.command.Command.executeUpdate(Command.java:261) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233) ~[h2-1.4.197.jar:1.4.197]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205) ~[h2-1.4.197.jar:1.4.197]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:486) ~[spring-jdbc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	... 31 common frames omitted
+
+2019-12-04 12:37:12.648  INFO 1450 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1450 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:37:12.652  INFO 1450 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:37:13.768  INFO 1450 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:37:13.959  INFO 1450 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181ms. Found 3 repository interfaces.
+2019-12-04 12:37:14.417  INFO 1450 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ead6f07e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:37:14.440  INFO 1450 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$faf23a33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:37:14.444  INFO 1450 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$af20bf39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:37:14.731  INFO 1450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:37:14.756  INFO 1450 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:37:14.756  INFO 1450 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:37:14.766  INFO 1450 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:37:15.068  INFO 1450 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:37:15.082  INFO 1450 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:37:15.082  INFO 1450 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2369 ms
+2019-12-04 12:37:15.196  INFO 1450 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:37:15.197  INFO 1450 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:37:15.204  INFO 1450 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:37:15.204  INFO 1450 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:37:15.205  INFO 1450 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:37:15.746  INFO 1450 --- [main] org.reflections.Reflections              : Reflections took 466 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 12:37:16.095  INFO 1450 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:37:16.466  INFO 1450 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:37:16.994  INFO 1450 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:37:16.995  INFO 1450 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:37:16.995  INFO 1450 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:37:17.104  INFO 1450 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:37:17.181  INFO 1450 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:37:17.233  INFO 1450 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:37:17.290  INFO 1450 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:37:17.292  INFO 1450 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:37:17.395  INFO 1450 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:37:17.497  INFO 1450 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:37:18.080  INFO 1450 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@601e7c97'
+2019-12-04 12:37:18.083  INFO 1450 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:37:18.573  INFO 1450 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 12:37:18.576  INFO 1450 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.528 seconds (JVM running for 7.507)
+2019-12-04 12:37:22.374  INFO 1450 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 12:46:13.695  INFO 1450 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:46:13.697  INFO 1450 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 12:46:13.709  INFO 1450 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 12:46:13.714  INFO 1450 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 12:58:38.098  INFO 1472 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1472 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 12:58:38.100  INFO 1472 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 12:58:39.051  INFO 1472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 12:58:39.253  INFO 1472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178ms. Found 3 repository interfaces.
+2019-12-04 12:58:39.878  INFO 1472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec640fd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:58:39.913  INFO 1472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$fc7f5988] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:58:39.918  INFO 1472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$b0adde8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 12:58:40.298  INFO 1472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 12:58:40.325  INFO 1472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 12:58:40.326  INFO 1472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 12:58:40.334  INFO 1472 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 12:58:40.642  INFO 1472 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 12:58:40.653  INFO 1472 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 12:58:40.653  INFO 1472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2514 ms
+2019-12-04 12:58:40.763  INFO 1472 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 12:58:40.765  INFO 1472 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 12:58:40.771  INFO 1472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 12:58:40.772  INFO 1472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 12:58:40.772  INFO 1472 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 12:58:41.285  INFO 1472 --- [main] org.reflections.Reflections              : Reflections took 449 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 12:58:41.580  INFO 1472 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 12:58:41.902  INFO 1472 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 12:58:42.459  INFO 1472 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 12:58:42.460  INFO 1472 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 12:58:42.460  INFO 1472 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 12:58:42.579  INFO 1472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 12:58:42.666  INFO 1472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 12:58:42.715  INFO 1472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 12:58:42.776  INFO 1472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 12:58:42.777  INFO 1472 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 12:58:42.893  INFO 1472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 12:58:43.004  INFO 1472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 12:58:43.607  INFO 1472 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7d836c4a'
+2019-12-04 12:58:43.610  INFO 1472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 12:58:44.160  INFO 1472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 12:58:44.164  INFO 1472 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.575 seconds (JVM running for 7.451)
+2019-12-04 12:58:52.014  INFO 1472 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:02:25.060  INFO 1472 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:02:25.065  INFO 1472 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:02:25.080  INFO 1472 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:02:25.084  INFO 1472 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 13:03:38.089  INFO 1487 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1487 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 13:03:38.092  INFO 1487 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 13:03:39.268  INFO 1487 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 13:03:39.474  INFO 1487 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190ms. Found 3 repository interfaces.
+2019-12-04 13:03:39.906  INFO 1487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0f2eee5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:03:39.929  INFO 1487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$c10e389a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:03:39.933  INFO 1487 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$753cbda0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:03:40.186  INFO 1487 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 13:03:40.204  INFO 1487 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 13:03:40.204  INFO 1487 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 13:03:40.212  INFO 1487 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 13:03:40.501  INFO 1487 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 13:03:40.512  INFO 1487 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 13:03:40.512  INFO 1487 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2358 ms
+2019-12-04 13:03:40.615  INFO 1487 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 13:03:40.616  INFO 1487 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 13:03:40.622  INFO 1487 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 13:03:40.623  INFO 1487 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 13:03:40.623  INFO 1487 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 13:03:41.164  INFO 1487 --- [main] org.reflections.Reflections              : Reflections took 471 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 13:03:41.540  INFO 1487 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 13:03:41.776  INFO 1487 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 13:03:42.371  INFO 1487 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 13:03:42.373  INFO 1487 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 13:03:42.373  INFO 1487 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 13:03:42.483  INFO 1487 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 13:03:42.564  INFO 1487 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 13:03:42.617  INFO 1487 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 13:03:42.678  INFO 1487 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 13:03:42.679  INFO 1487 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 13:03:42.794  INFO 1487 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 13:03:42.901  INFO 1487 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 13:03:43.440  INFO 1487 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1acfc058'
+2019-12-04 13:03:43.443  INFO 1487 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:03:44.143  INFO 1487 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 13:03:44.146  INFO 1487 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.685 seconds (JVM running for 7.875)
+2019-12-04 13:03:49.281  INFO 1487 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:04:54.610  INFO 1487 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:04:54.612  INFO 1487 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:04:54.626  INFO 1487 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:04:54.631  INFO 1487 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 13:05:00.353  INFO 1492 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1492 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 13:05:00.356  INFO 1492 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 13:05:01.474  INFO 1492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 13:05:01.673  INFO 1492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187ms. Found 3 repository interfaces.
+2019-12-04 13:05:02.196  INFO 1492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e4db1d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:05:02.221  INFO 1492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$3e68fb8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:05:02.226  INFO 1492 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$f2978091] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:05:02.513  INFO 1492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 13:05:02.534  INFO 1492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 13:05:02.534  INFO 1492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 13:05:02.542  INFO 1492 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 13:05:02.824  INFO 1492 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 13:05:02.835  INFO 1492 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 13:05:02.835  INFO 1492 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2423 ms
+2019-12-04 13:05:02.942  INFO 1492 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 13:05:02.944  INFO 1492 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 13:05:02.951  INFO 1492 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 13:05:02.951  INFO 1492 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 13:05:02.951  INFO 1492 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 13:05:03.463  INFO 1492 --- [main] org.reflections.Reflections              : Reflections took 444 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 13:05:03.924  INFO 1492 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 13:05:04.187  INFO 1492 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 13:05:04.764  INFO 1492 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 13:05:04.765  INFO 1492 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 13:05:04.765  INFO 1492 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 13:05:04.881  INFO 1492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 13:05:04.964  INFO 1492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 13:05:05.020  INFO 1492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 13:05:05.078  INFO 1492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 13:05:05.080  INFO 1492 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 13:05:05.189  INFO 1492 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 13:05:05.293  INFO 1492 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 13:05:05.846  INFO 1492 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@136690b1'
+2019-12-04 13:05:05.850  INFO 1492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:05:06.564  INFO 1492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 13:05:06.567  INFO 1492 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.906 seconds (JVM running for 7.994)
+2019-12-04 13:05:11.491  INFO 1492 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:05:48.326  INFO 1492 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:05:48.328  INFO 1492 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:05:48.343  INFO 1492 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:05:48.349  INFO 1492 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 13:07:21.302  INFO 1496 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1496 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 13:07:21.314  INFO 1496 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 13:07:22.403  INFO 1496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 13:07:22.619  INFO 1496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208ms. Found 3 repository interfaces.
+2019-12-04 13:07:23.129  INFO 1496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c97d8184] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:07:23.160  INFO 1496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$d998cb39] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:07:23.164  INFO 1496 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$8dc7503f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:07:23.461  INFO 1496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 13:07:23.481  INFO 1496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 13:07:23.482  INFO 1496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 13:07:23.490  INFO 1496 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 13:07:23.767  INFO 1496 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 13:07:23.778  INFO 1496 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 13:07:23.778  INFO 1496 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2388 ms
+2019-12-04 13:07:23.885  INFO 1496 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 13:07:23.887  INFO 1496 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 13:07:23.893  INFO 1496 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 13:07:23.893  INFO 1496 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 13:07:23.894  INFO 1496 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 13:07:24.446  INFO 1496 --- [main] org.reflections.Reflections              : Reflections took 490 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 13:07:24.732  INFO 1496 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 13:07:25.040  INFO 1496 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 13:07:25.566  INFO 1496 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 13:07:25.567  INFO 1496 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 13:07:25.567  INFO 1496 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 13:07:25.682  INFO 1496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 13:07:25.762  INFO 1496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 13:07:25.820  INFO 1496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 13:07:25.876  INFO 1496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 13:07:25.878  INFO 1496 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 13:07:25.983  INFO 1496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 13:07:26.091  INFO 1496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 13:07:26.666  INFO 1496 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1718de70'
+2019-12-04 13:07:26.670  INFO 1496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:07:27.236  INFO 1496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 13:07:27.241  INFO 1496 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.641 seconds (JVM running for 7.849)
+2019-12-04 13:07:34.098  INFO 1496 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:08:38.584  INFO 1496 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:08:38.586  INFO 1496 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:08:38.598  INFO 1496 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:08:38.604  INFO 1496 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 13:08:43.922  INFO 1512 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1512 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 13:08:43.926  INFO 1512 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 13:08:45.203  INFO 1512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 13:08:45.364  INFO 1512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152ms. Found 3 repository interfaces.
+2019-12-04 13:08:45.939  INFO 1512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$926d0367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:08:45.963  INFO 1512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$a2884d1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:08:45.968  INFO 1512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$56b6d222] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:08:46.287  INFO 1512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 13:08:46.305  INFO 1512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 13:08:46.306  INFO 1512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 13:08:46.313  INFO 1512 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 13:08:46.571  INFO 1512 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 13:08:46.582  INFO 1512 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 13:08:46.582  INFO 1512 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2509 ms
+2019-12-04 13:08:46.682  INFO 1512 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 13:08:46.683  INFO 1512 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 13:08:46.689  INFO 1512 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 13:08:46.690  INFO 1512 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 13:08:46.690  INFO 1512 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 13:08:47.193  INFO 1512 --- [main] org.reflections.Reflections              : Reflections took 438 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 13:08:47.581  INFO 1512 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 13:08:47.839  INFO 1512 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 13:08:48.429  INFO 1512 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 13:08:48.430  INFO 1512 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 13:08:48.430  INFO 1512 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 13:08:48.563  INFO 1512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 13:08:48.663  INFO 1512 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 13:08:48.713  INFO 1512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 13:08:48.777  INFO 1512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 13:08:48.779  INFO 1512 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 13:08:48.895  INFO 1512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 13:08:49.009  INFO 1512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 13:08:49.749  INFO 1512 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2e590e36'
+2019-12-04 13:08:49.754  INFO 1512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:08:50.282  INFO 1512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 13:08:50.286  INFO 1512 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 7.038 seconds (JVM running for 7.911)
+2019-12-04 13:08:53.820  INFO 1512 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:09:19.713  INFO 1512 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:09:19.714  INFO 1512 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:09:19.730  INFO 1512 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:09:19.734  INFO 1512 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 13:47:46.855  INFO 1899 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on Kristof-MacBook-Air.local with PID 1899 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 13:47:46.861  INFO 1899 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 13:47:48.088  INFO 1899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 13:47:48.258  INFO 1899 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 3 repository interfaces.
+2019-12-04 13:47:48.797  INFO 1899 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a536c029] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:47:48.821  INFO 1899 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$b55209de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:47:48.826  INFO 1899 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$69808ee4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 13:47:49.102  INFO 1899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 13:47:49.120  INFO 1899 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 13:47:49.122  INFO 1899 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 13:47:49.129  INFO 1899 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 13:47:49.392  INFO 1899 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 13:47:49.402  INFO 1899 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 13:47:49.402  INFO 1899 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2449 ms
+2019-12-04 13:47:49.508  INFO 1899 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 13:47:49.509  INFO 1899 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 13:47:49.516  INFO 1899 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 13:47:49.516  INFO 1899 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 13:47:49.517  INFO 1899 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 13:47:50.009  INFO 1899 --- [main] org.reflections.Reflections              : Reflections took 414 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 13:47:50.436  INFO 1899 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 13:47:50.673  INFO 1899 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 13:47:51.310  INFO 1899 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 13:47:51.311  INFO 1899 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 13:47:51.312  INFO 1899 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 13:47:51.448  INFO 1899 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 13:47:51.551  INFO 1899 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 13:47:51.609  INFO 1899 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 13:47:51.660  INFO 1899 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 13:47:51.662  INFO 1899 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 13:47:51.772  INFO 1899 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 13:47:51.888  INFO 1899 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 13:47:52.577  INFO 1899 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@51d34f02'
+2019-12-04 13:47:52.580  INFO 1899 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:47:53.121  INFO 1899 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 13:47:53.126  INFO 1899 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 7.427 seconds (JVM running for 8.748)
+2019-12-04 13:47:59.658  INFO 1899 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 13:48:24.349  INFO 1899 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 13:48:24.349  INFO 1899 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 13:48:24.364  INFO 1899 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 13:48:24.368  INFO 1899 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:11:56.973  INFO 2779 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2779 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:11:56.978  INFO 2779 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:11:58.087  INFO 2779 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:11:58.287  INFO 2779 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174ms. Found 3 repository interfaces.
+2019-12-04 16:11:58.858  INFO 2779 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$74090544] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:11:58.904  INFO 2779 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$84244ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:11:58.907  INFO 2779 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$3852d3ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:11:59.443  INFO 2779 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:11:59.477  INFO 2779 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:11:59.477  INFO 2779 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:11:59.491  INFO 2779 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:11:59.872  INFO 2779 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:11:59.895  INFO 2779 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:11:59.895  INFO 2779 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2797 ms
+2019-12-04 16:12:00.023  INFO 2779 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:12:00.026  INFO 2779 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:12:00.034  INFO 2779 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:12:00.034  INFO 2779 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:12:00.034  INFO 2779 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:12:01.017  INFO 2779 --- [main] org.reflections.Reflections              : Reflections took 852 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:12:01.355  INFO 2779 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:12:01.659  INFO 2779 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:12:02.259  INFO 2779 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:12:02.260  INFO 2779 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:12:02.261  INFO 2779 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:12:02.479  INFO 2779 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:12:02.752  INFO 2779 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:12:02.868  INFO 2779 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:12:03.123  INFO 2779 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:12:03.127  INFO 2779 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:12:03.665  INFO 2779 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:12:03.991  INFO 2779 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:12:05.532  INFO 2779 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6672b0ea'
+2019-12-04 16:12:05.539  INFO 2779 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:12:06.425  INFO 2779 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:12:06.429  INFO 2779 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 10.384 seconds (JVM running for 11.831)
+2019-12-04 16:12:19.262  INFO 2779 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:14:06.054  INFO 2779 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:14:06.055  INFO 2779 --- [Thread-25] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:14:06.074  INFO 2779 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:14:06.095  INFO 2779 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:14:09.501  INFO 2793 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2793 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:14:09.504  INFO 2793 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:14:10.535  INFO 2793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:14:10.710  INFO 2793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167ms. Found 3 repository interfaces.
+2019-12-04 16:14:11.226  INFO 2793 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23de86cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:14:11.250  INFO 2793 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$33f9d084] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:14:11.254  INFO 2793 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$e828558a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:14:11.520  INFO 2793 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:14:11.538  INFO 2793 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:14:11.539  INFO 2793 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:14:11.546  INFO 2793 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:14:11.809  INFO 2793 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:14:11.819  INFO 2793 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:14:11.820  INFO 2793 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2249 ms
+2019-12-04 16:14:11.936  INFO 2793 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:14:11.938  INFO 2793 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:14:11.944  INFO 2793 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:14:11.945  INFO 2793 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:14:11.945  INFO 2793 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:14:12.448  INFO 2793 --- [main] org.reflections.Reflections              : Reflections took 438 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:14:12.849  INFO 2793 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:14:13.080  INFO 2793 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:14:13.636  INFO 2793 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:14:13.637  INFO 2793 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:14:13.638  INFO 2793 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:14:13.752  INFO 2793 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:14:13.830  INFO 2793 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:14:13.887  INFO 2793 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:14:13.947  INFO 2793 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:14:13.949  INFO 2793 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:14:14.052  INFO 2793 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:14:14.152  INFO 2793 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:14:14.667  INFO 2793 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7d0e43d6'
+2019-12-04 16:14:14.670  INFO 2793 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:14:15.350  INFO 2793 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:14:15.353  INFO 2793 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.515 seconds (JVM running for 7.443)
+2019-12-04 16:14:20.047  INFO 2793 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:18:05.386  INFO 2793 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:18:05.386  INFO 2793 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:18:05.405  INFO 2793 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:18:05.413  INFO 2793 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:18:08.730  INFO 2859 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2859 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:18:08.734  INFO 2859 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:18:09.853  INFO 2859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:18:10.058  INFO 2859 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194ms. Found 3 repository interfaces.
+2019-12-04 16:18:10.542  INFO 2859 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc2e223] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:18:10.566  INFO 2859 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$1dde2bd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:18:10.570  INFO 2859 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$d20cb0de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:18:10.845  INFO 2859 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:18:10.863  INFO 2859 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:18:10.864  INFO 2859 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:18:10.871  INFO 2859 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:18:11.121  INFO 2859 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:18:11.131  INFO 2859 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:18:11.131  INFO 2859 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2323 ms
+2019-12-04 16:18:11.238  INFO 2859 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:18:11.240  INFO 2859 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:18:11.246  INFO 2859 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:18:11.246  INFO 2859 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:18:11.247  INFO 2859 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:18:11.758  INFO 2859 --- [main] org.reflections.Reflections              : Reflections took 447 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:18:12.049  INFO 2859 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:18:12.363  INFO 2859 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:18:12.894  INFO 2859 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:18:12.895  INFO 2859 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:18:12.895  INFO 2859 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:18:13.001  INFO 2859 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:18:13.077  INFO 2859 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:18:13.125  INFO 2859 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:18:13.183  INFO 2859 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:18:13.185  INFO 2859 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:18:13.294  INFO 2859 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:18:13.397  INFO 2859 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:18:13.971  INFO 2859 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@12c30824'
+2019-12-04 16:18:13.975  INFO 2859 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:18:14.490  INFO 2859 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:18:14.494  INFO 2859 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.322 seconds (JVM running for 7.218)
+2019-12-04 16:18:19.342  INFO 2859 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:35:55.738  INFO 2859 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:35:55.742  INFO 2859 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:35:55.786  INFO 2859 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:35:55.798  INFO 2859 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:36:03.787  INFO 2949 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2949 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:36:03.790  INFO 2949 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:36:04.903  INFO 2949 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:36:05.091  INFO 2949 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177ms. Found 3 repository interfaces.
+2019-12-04 16:36:05.580  INFO 2949 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3cea50a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:05.603  INFO 2949 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$4d059a57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:05.607  INFO 2949 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$1341f5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:05.888  INFO 2949 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:36:05.909  INFO 2949 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:36:05.909  INFO 2949 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:36:05.917  INFO 2949 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:36:06.175  INFO 2949 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:36:06.186  INFO 2949 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:36:06.186  INFO 2949 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2328 ms
+2019-12-04 16:36:06.290  INFO 2949 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:36:06.292  INFO 2949 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:36:06.301  INFO 2949 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:36:06.301  INFO 2949 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:36:06.302  INFO 2949 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:36:06.817  INFO 2949 --- [main] org.reflections.Reflections              : Reflections took 451 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:36:07.107  INFO 2949 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:36:07.419  INFO 2949 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:36:07.962  INFO 2949 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:36:07.963  INFO 2949 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:36:07.964  INFO 2949 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:36:08.078  INFO 2949 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:36:08.160  INFO 2949 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:36:08.213  INFO 2949 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:36:08.277  INFO 2949 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:36:08.278  INFO 2949 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:36:08.394  INFO 2949 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:36:08.516  INFO 2949 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:36:09.145  INFO 2949 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@b1f36e5'
+2019-12-04 16:36:09.148  INFO 2949 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:36:09.662  INFO 2949 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:36:09.665  INFO 2949 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.484 seconds (JVM running for 7.363)
+2019-12-04 16:36:14.547  INFO 2949 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:36:46.610  INFO 2949 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:36:46.611  INFO 2949 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:36:46.623  INFO 2949 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:36:46.631  INFO 2949 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:36:50.842  INFO 2957 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2957 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:36:50.846  INFO 2957 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:36:51.894  INFO 2957 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:36:52.065  INFO 2957 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163ms. Found 3 repository interfaces.
+2019-12-04 16:36:52.552  INFO 2957 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ffd24ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:52.577  INFO 2957 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$80186e61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:52.581  INFO 2957 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$3446f367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:36:52.906  INFO 2957 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:36:52.929  INFO 2957 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:36:52.929  INFO 2957 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:36:52.937  INFO 2957 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:36:53.201  INFO 2957 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:36:53.212  INFO 2957 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:36:53.213  INFO 2957 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2301 ms
+2019-12-04 16:36:53.318  INFO 2957 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:36:53.319  INFO 2957 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:36:53.326  INFO 2957 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:36:53.326  INFO 2957 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:36:53.326  INFO 2957 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:36:53.825  INFO 2957 --- [main] org.reflections.Reflections              : Reflections took 431 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:36:54.193  INFO 2957 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:36:54.424  INFO 2957 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:36:54.982  INFO 2957 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:36:54.983  INFO 2957 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:36:54.983  INFO 2957 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:36:55.090  INFO 2957 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:36:55.167  INFO 2957 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:36:55.224  INFO 2957 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:36:55.284  INFO 2957 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:36:55.287  INFO 2957 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:36:55.403  INFO 2957 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:36:55.512  INFO 2957 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:36:56.078  INFO 2957 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3af6c672'
+2019-12-04 16:36:56.082  INFO 2957 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:36:56.763  INFO 2957 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:36:56.767  INFO 2957 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.556 seconds (JVM running for 7.43)
+2019-12-04 16:37:00.193  INFO 2957 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:38:20.769  INFO 2957 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:38:20.770  INFO 2957 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:38:20.779  INFO 2957 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:38:20.784  INFO 2957 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:38:25.078  INFO 2960 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2960 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:38:25.083  INFO 2960 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:38:26.269  INFO 2960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:38:26.476  INFO 2960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191ms. Found 3 repository interfaces.
+2019-12-04 16:38:27.083  INFO 2960 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$585373bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:38:27.113  INFO 2960 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$686ebd72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:38:27.117  INFO 2960 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$1c9d4278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:38:27.439  INFO 2960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:38:27.462  INFO 2960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:38:27.462  INFO 2960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:38:27.471  INFO 2960 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:38:27.786  INFO 2960 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:38:27.799  INFO 2960 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:38:27.799  INFO 2960 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2666 ms
+2019-12-04 16:38:27.923  INFO 2960 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:38:27.925  INFO 2960 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:38:27.931  INFO 2960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:38:27.931  INFO 2960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:38:27.931  INFO 2960 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:38:28.408  INFO 2960 --- [main] org.reflections.Reflections              : Reflections took 408 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:38:28.792  INFO 2960 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:38:29.030  INFO 2960 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:38:29.614  INFO 2960 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:38:29.615  INFO 2960 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:38:29.616  INFO 2960 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:38:29.724  INFO 2960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:38:29.801  INFO 2960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:38:29.851  INFO 2960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:38:29.910  INFO 2960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:38:29.912  INFO 2960 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:38:30.026  INFO 2960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:38:30.137  INFO 2960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:38:30.677  INFO 2960 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@bb1b872'
+2019-12-04 16:38:30.681  INFO 2960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:38:31.367  INFO 2960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:38:31.370  INFO 2960 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.88 seconds (JVM running for 7.798)
+2019-12-04 16:38:37.017  INFO 2960 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:39:36.533  INFO 2960 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:39:36.535  INFO 2960 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:39:36.552  INFO 2960 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:39:36.563  INFO 2960 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:39:38.851  INFO 2964 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2964 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:39:38.854  INFO 2964 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:39:39.926  INFO 2964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:39:40.139  INFO 2964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202ms. Found 3 repository interfaces.
+2019-12-04 16:39:40.632  INFO 2964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$39a6681b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:39:40.655  INFO 2964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$49c1b1d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:39:40.659  INFO 2964 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$fdf036d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:39:40.951  INFO 2964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:39:40.970  INFO 2964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:39:40.970  INFO 2964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:39:40.977  INFO 2964 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:39:41.237  INFO 2964 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:39:41.247  INFO 2964 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:39:41.248  INFO 2964 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2343 ms
+2019-12-04 16:39:41.354  INFO 2964 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:39:41.356  INFO 2964 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:39:41.363  INFO 2964 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:39:41.363  INFO 2964 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:39:41.363  INFO 2964 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:39:41.871  INFO 2964 --- [main] org.reflections.Reflections              : Reflections took 442 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:39:42.155  INFO 2964 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:39:42.462  INFO 2964 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:39:42.988  INFO 2964 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:39:42.989  INFO 2964 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:39:42.990  INFO 2964 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:39:43.099  INFO 2964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:39:43.176  INFO 2964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:39:43.226  INFO 2964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:39:43.289  INFO 2964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:39:43.290  INFO 2964 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:39:43.401  INFO 2964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:39:43.529  INFO 2964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:39:44.106  INFO 2964 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@35975b05'
+2019-12-04 16:39:44.109  INFO 2964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:39:44.619  INFO 2964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:39:44.622  INFO 2964 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.306 seconds (JVM running for 7.2)
+2019-12-04 16:39:50.877  INFO 2964 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:40:42.147  INFO 2964 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:40:42.148  INFO 2964 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:40:42.164  INFO 2964 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:40:42.168  INFO 2964 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:40:55.423  INFO 2970 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2970 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:40:55.427  INFO 2970 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:40:56.468  INFO 2970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:40:56.658  INFO 2970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181ms. Found 3 repository interfaces.
+2019-12-04 16:40:57.156  INFO 2970 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d34a2db7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:40:57.178  INFO 2970 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$e365776c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:40:57.182  INFO 2970 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$9793fc72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:40:57.459  INFO 2970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:40:57.478  INFO 2970 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:40:57.479  INFO 2970 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:40:57.486  INFO 2970 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:40:57.743  INFO 2970 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:40:57.753  INFO 2970 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:40:57.754  INFO 2970 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2261 ms
+2019-12-04 16:40:57.863  INFO 2970 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:40:57.865  INFO 2970 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:40:57.871  INFO 2970 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:40:57.872  INFO 2970 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:40:57.872  INFO 2970 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:40:58.371  INFO 2970 --- [main] org.reflections.Reflections              : Reflections took 435 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:40:58.749  INFO 2970 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:40:58.977  INFO 2970 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:40:59.549  INFO 2970 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:40:59.550  INFO 2970 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:40:59.550  INFO 2970 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:40:59.663  INFO 2970 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:40:59.740  INFO 2970 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:40:59.793  INFO 2970 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:40:59.858  INFO 2970 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:40:59.860  INFO 2970 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:40:59.983  INFO 2970 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:41:00.100  INFO 2970 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:41:00.811  INFO 2970 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@70680f88'
+2019-12-04 16:41:00.815  INFO 2970 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:41:01.384  INFO 2970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:41:01.389  INFO 2970 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.549 seconds (JVM running for 7.447)
+2019-12-04 16:41:07.918  INFO 2970 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:41:34.447  INFO 2970 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:41:34.450  INFO 2970 --- [Thread-16] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:41:34.459  INFO 2970 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:41:34.463  INFO 2970 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:42:00.288  INFO 2973 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2973 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:42:00.291  INFO 2973 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:42:01.492  INFO 2973 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:42:01.672  INFO 2973 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167ms. Found 3 repository interfaces.
+2019-12-04 16:42:02.222  INFO 2973 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d52c0c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:02.246  INFO 2973 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$5d6e0a7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:02.250  INFO 2973 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$119c8f83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:02.522  INFO 2973 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:42:02.540  INFO 2973 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:42:02.541  INFO 2973 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:42:02.548  INFO 2973 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:42:02.812  INFO 2973 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:42:02.822  INFO 2973 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:42:02.823  INFO 2973 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2431 ms
+2019-12-04 16:42:02.930  INFO 2973 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:42:02.931  INFO 2973 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:42:02.938  INFO 2973 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:42:02.938  INFO 2973 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:42:02.938  INFO 2973 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:42:03.428  INFO 2973 --- [main] org.reflections.Reflections              : Reflections took 428 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:42:03.814  INFO 2973 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:42:04.070  INFO 2973 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:42:04.635  INFO 2973 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:42:04.636  INFO 2973 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:42:04.636  INFO 2973 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:42:04.749  INFO 2973 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:42:04.824  INFO 2973 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:42:04.874  INFO 2973 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:42:04.938  INFO 2973 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:42:04.939  INFO 2973 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:42:05.050  INFO 2973 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:42:05.156  INFO 2973 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:42:05.861  INFO 2973 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@441762b8'
+2019-12-04 16:42:05.864  INFO 2973 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:42:06.401  INFO 2973 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:42:06.405  INFO 2973 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.747 seconds (JVM running for 7.752)
+2019-12-04 16:42:10.274  INFO 2973 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:42:24.707  INFO 2973 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:42:24.708  INFO 2973 --- [Thread-17] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:42:24.723  INFO 2973 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:42:24.731  INFO 2973 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 16:42:27.071  INFO 2977 --- [main] com.webfejl.SpringPrimeFacesApplication  : Starting SpringPrimeFacesApplication on 6c-19-c0-9e-17-ce.pool.unideb.hu with PID 2977 (/Users/kristoferdei/Downloads/webfejlzh/target/classes started by kristoferdei in /Users/kristoferdei/Downloads/webfejlzh)
+2019-12-04 16:42:27.075  INFO 2977 --- [main] com.webfejl.SpringPrimeFacesApplication  : The following profiles are active: dev
+2019-12-04 16:42:28.037  INFO 2977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 16:42:28.173  INFO 2977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 3 repository interfaces.
+2019-12-04 16:42:28.685  INFO 2977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$363a4f35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:28.709  INFO 2977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$Jsf2_3AutoConfiguration$$EnhancerBySpringCGLIB$$465598ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:28.714  INFO 2977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration' of type [org.joinfaces.autoconfigure.javaxfaces.JsfBeansAutoConfiguration$$EnhancerBySpringCGLIB$$fa841df0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 16:42:28.972  INFO 2977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-04 16:42:28.988  INFO 2977 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-04 16:42:28.989  INFO 2977 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-04 16:42:28.995  INFO 2977 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/kristoferdei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-12-04 16:42:29.251  INFO 2977 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-12-04 16:42:29.261  INFO 2977 --- [main] o.a.c.c.C.[.[localhost].[/kristof]       : Initializing Spring embedded WebApplicationContext
+2019-12-04 16:42:29.262  INFO 2977 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2085 ms
+2019-12-04 16:42:29.364  INFO 2977 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet FacesServlet mapped to [/faces/*, *.jsf, *.faces, *.xhtml]
+2019-12-04 16:42:29.365  INFO 2977 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2/*]
+2019-12-04 16:42:29.371  INFO 2977 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-04 16:42:29.372  INFO 2977 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-04 16:42:29.372  INFO 2977 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'openEntityManagerInViewFilter' to: [/*]
+2019-12-04 16:42:29.865  INFO 2977 --- [main] org.reflections.Reflections              : Reflections took 432 ms to scan 6 urls, producing 760 keys and 4177 values 
+2019-12-04 16:42:30.261  INFO 2977 --- [main] j.e.resource.webcontainer.jsf.config     : Initializing Mojarra 2.3.7 ( 20180822-0020 fb5578e991d03fa881315e4c7beb52869a5e664b) for context '/kristof'
+2019-12-04 16:42:30.488  INFO 2977 --- [main] j.e.r.webcontainer.jsf.application       : JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+2019-12-04 16:42:31.043  INFO 2977 --- [main] .w.PostConstructApplicationEventListener : Running on PrimeFaces 6.2
+2019-12-04 16:42:31.045  INFO 2977 --- [main] .a.PostConstructApplicationEventListener : Running on PrimeFaces Extensions 6.2.9
+2019-12-04 16:42:31.045  INFO 2977 --- [main] o.omnifaces.VersionLoggerEventListener   : Using OmniFaces version 1.14.1
+2019-12-04 16:42:31.163  INFO 2977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-04 16:42:31.238  INFO 2977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-04 16:42:31.293  INFO 2977 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-04 16:42:31.360  INFO 2977 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-04 16:42:31.361  INFO 2977 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-04 16:42:31.471  INFO 2977 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-04 16:42:31.578  INFO 2977 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-04 16:42:32.113  INFO 2977 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@474deb4c'
+2019-12-04 16:42:32.117  INFO 2977 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:42:32.803  INFO 2977 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/kristof'
+2019-12-04 16:42:32.806  INFO 2977 --- [main] com.webfejl.SpringPrimeFacesApplication  : Started SpringPrimeFacesApplication in 6.323 seconds (JVM running for 7.2)
+2019-12-04 16:42:37.806  INFO 2977 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-04 16:50:19.890  INFO 2977 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 16:50:19.890  INFO 2977 --- [Thread-15] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-04 16:50:19.902  INFO 2977 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 16:50:19.907  INFO 2977 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

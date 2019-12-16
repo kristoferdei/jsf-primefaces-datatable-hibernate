@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<f:view>
+<h:head>
+  <title>webfejl</title>
+</h:head>
+
+<h:body>
+
+  <p:megaMenu orientation="#{megaMenuView.orientation}" style="margin-top:20px">
+    <p:submenu label="menu" icon="pi pi-check">
+      <p:column>
+        <p:submenu label="tablak">
+          <p:menuitem value="cars" url="http://localhost:8080/kristof/cars.xhtml" />
+          <p:menuitem value="repters" url="http://localhost:8080/kristof/repters.xhtml" />
+        </p:submenu>
+        <p:submenu label="tablak">
+          <p:menuitem value="utas" url="http://localhost:8080/kristof/utass.xhtml" />
+          <p:menuitem value="TV.2.2" url="#" />
+          <p:menuitem value="TV.2.3" url="#" />
+        </p:submenu>
+      </p:column>
+
+      <p:column>
+        <p:submenu label="TV.4">
+          <p:menuitem value="TV.4.1" url="#" />
+          <p:menuitem value="TV.4.2" url="#" />
+        </p:submenu>
+        <p:submenu label="TV.5">
+          <p:menuitem value="TV.5.1" url="#" />
+          <p:menuitem value="TV.5.2" url="#" />
+          <p:menuitem value="TV.5.3" url="#" />
+        </p:submenu>
+      </p:column>
+    </p:submenu>
+
+    <p:submenu label="Sports" icon="pi pi-file">
+
+      <p:column>
+        <p:submenu label="Sports.1">
+          <p:menuitem value="Sports.1.1" url="#" />
+          <p:menuitem value="Sports.1.2" url="#" />
+        </p:submenu>
+        <p:submenu label="Sports.2">
+          <p:menuitem value="Sports.2.1" url="#" />
+          <p:menuitem value="Sports.2.2" url="#" />
+          <p:menuitem value="Sports.2.3" url="#" />
+        </p:submenu>
+      </p:column>
+
+      <p:column>
+        <p:submenu label="Sports.4">
+          <p:menuitem value="Sports.4.1" url="#" />
+          <p:menuitem value="Sports.4.2" url="#" />
+        </p:submenu>
+        <p:submenu label="Sports.5">
+          <p:menuitem value="Sports.5.1" url="#" />
+          <p:menuitem value="Sports.5.2" url="#" />
+          <p:menuitem value="Sports.5.3" url="#" />
+        </p:submenu>
+      </p:column>
+      <p:column>
+        <p:submenu label="Sports.7">
+          <p:menuitem value="Sports.7.1" url="#" />
+          <p:menuitem value="Sports.7.2" url="#" />
+        </p:submenu>
+      </p:column>
+    </p:submenu>
+
+    <p:submenu label="Entertainment" icon="pi pi-pencil">
+      <p:column>
+        <p:submenu label="Entertainment.1">
+          <p:menuitem value="Entertainment.1.1" url="#" />
+          <p:menuitem value="Entertainment.1.2" url="#" />
+        </p:submenu>
+        <p:submenu label="Entertainment.2">
+          <p:menuitem value="Entertainment.2.1" url="#" />
+          <p:menuitem value="Entertainment.2.2" url="#" />
+          <p:menuitem value="Entertainment.2.3" url="#" />
+        </p:submenu>
+      </p:column>
+
+      <p:column>
+        <p:submenu label="Entertainment.4">
+          <p:menuitem value="Entertainment.4.1" url="#" />
+          <p:menuitem value="Entertainment.4.2" url="#" />
+        </p:submenu>
+        <p:submenu label="Entertainment.5">
+          <p:menuitem value="Entertainment.5.1" url="#" />
+          <p:menuitem value="Entertainment.5.2" url="#" />
+          <p:menuitem value="Entertainment.5.3" url="#" />
+        </p:submenu>
+      </p:column>
+    </p:submenu>
+
+    <p:submenu label="Tech" icon="pi pi-briefcase">
+      <p:column>
+        <p:submenu label="Tech.1">
+          <p:menuitem value="Tech.1.1" url="#" />
+          <p:menuitem value="Tech.1.2" url="#" />
+        </p:submenu>
+        <p:submenu label="Tech.2">
+          <p:menuitem value="Tech.2.1" url="#" />
+          <p:menuitem value="Tech.2.2" url="#" />
+          <p:menuitem value="Tech.2.3" url="#" />
+        </p:submenu>
+      </p:column>
+
+      <p:column>
+        <p:submenu label="Tech.4">
+          <p:menuitem value="Tech.4.1" url="#" />
+          <p:menuitem value="Tech.4.2" url="#" />
+        </p:submenu>
+      </p:column>
+    </p:submenu>
+
+    <p:menuitem value="Quit" url="http://www.primefaces.org" icon="pi pi-times" />
+  </p:megaMenu>
+  <ui:insert name="content"/>
+</h:body>
+</f:view>
+</html>
+
